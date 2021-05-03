@@ -6,9 +6,9 @@ import pandas as pd
 
 app = FastAPI()
 
-user_weights = pd.read_csv('../userWeights.csv')
-user_feedback = pd.read_csv('../CSP_QoS_UserFeedback1.csv')
-csp_promised_parameters = pd.read_csv('../CSP_Promised_Parameters (1).csv')
+user_weights = pd.read_csv('/userWeights.csv')
+user_feedback = pd.read_csv('/CSP_QoS_UserFeedback1.csv')
+csp_promised_parameters = pd.read_csv('/CSP_Promised_Parameters (1).csv')
 
 from sklearn.metrics.pairwise import cosine_similarity
 import operator
